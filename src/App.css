@@ -1,4 +1,3 @@
-
 .nav {
   display: inline-block;
 }
@@ -19,7 +18,7 @@
   margin-bottom: 10px;
 }
 
-.shirt img{
+.shirt img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -29,12 +28,12 @@
   font-size: 20px;
 }
 
-.price span{
+.price span {
   float: right;
 }
 
 .color-preview {
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   margin: 2px;
   vertical-align: top;
   float: left;
@@ -42,4 +41,20 @@
   overflow: hidden;
   width: 20px;
   height: 20px;
+}
+
+.relative {
+  position: relative;
+}
+.w-100{
+  width: 550px;
+  height: 550px;
+}
+
+.upperImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 550px;
+  height: 550px;
 }

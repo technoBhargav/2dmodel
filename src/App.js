@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import "./App.css";
 // import Price from './components/price';
 import Custom from "./components/custom";
-import Shirt from "./components/shirt";
-import SVGComponent from "./components/SVGComponent";
+// import Shirt from "./components/shirt";
+// import SVGComponent from "./components/SVGComponent";
+import SuitImage from "./components/SuitImage";
 
 class App extends Component {
   constructor() {
@@ -24,7 +25,8 @@ class App extends Component {
           <Custom state={this.state} changeDesign={this.changeDesign} />
         </div>
 
-        <SVGComponent design={this.state.design} />
+        {/* <SVGComponent design={this.state.design} /> */}
+        <SuitImage design={this.state.design}/>
       </div>
     );
   }

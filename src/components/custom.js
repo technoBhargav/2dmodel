@@ -3,14 +3,14 @@ import React, { Component } from "react";
 class Custom extends Component {
   render() {
     return (
-      <div class="card">
-        <div class="container">
+      <div className="card">
+        <div className="container">
           <h4>
             <b>Design</b>
           </h4>
-          <div class="grid-container">
+          <div className="grid-container">
             <div
-              class="grid-item"
+              className="grid-item"
               style={{
                 backgroundImage:
                   'url("https://d2w9m16hs9jc37.cloudfront.net/dimg/fabric/suit/894_huge_c300.jpg")',
@@ -25,7 +25,7 @@ class Custom extends Component {
             ></div>
 
             <div
-              class="grid-item"
+              className="grid-item"
               style={{
                 backgroundImage:
                   'url("https://d2w9m16hs9jc37.cloudfront.net/dimg/fabric/suit/141_huge_c300.jpg")',
@@ -40,7 +40,7 @@ class Custom extends Component {
             ></div>
 
             <div
-              class="grid-item"
+              className="grid-item"
               style={{
                 backgroundImage:
                   'url("https://www.hockerty.com/dimg/fabric/suit/2251_huge.jpg")',
@@ -54,7 +54,7 @@ class Custom extends Component {
             ></div>
 
             <div
-              class="grid-item"
+              className="grid-item"
               style={{
                 backgroundImage:
                   'url("https://d2w9m16hs9jc37.cloudfront.net/dimg/fabric/suit/3322_huge_c300.jpg")',
@@ -69,7 +69,7 @@ class Custom extends Component {
             ></div>
 
             <div
-              class="grid-item"
+              className="grid-item"
               style={{
                 backgroundImage:
                   'url("https://d2w9m16hs9jc37.cloudfront.net/dimg/fabric/suit/3328_huge_c300.jpg")',
@@ -84,7 +84,7 @@ class Custom extends Component {
             ></div>
 
             <div
-              class="grid-item"
+              className="grid-item"
               style={{
                 backgroundImage:
                   'url("https://www.hockerty.com/dimg/fabric/suit/3163_huge.jpg")',

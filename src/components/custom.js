@@ -12,11 +12,10 @@ class Custom extends Component {
             <div
               className="grid-item"
               style={{
-                backgroundImage:
-                  'url("https://d2w9m16hs9jc37.cloudfront.net/dimg/fabric/suit/894_huge_c300.jpg")',
+                backgroundImage: 'url("/suits/BlackTexture.png")',
                 height: "20px",
                 borderRadius: "10px",
-                cursor:"pointer",
+                cursor: "pointer",
                 margin: "5px 5px 5px 5px",
               }}
               onClick={() => {
@@ -27,11 +26,10 @@ class Custom extends Component {
             <div
               className="grid-item"
               style={{
-                backgroundImage:
-                  'url("https://d2w9m16hs9jc37.cloudfront.net/dimg/fabric/suit/141_huge_c300.jpg")',
+                backgroundImage: 'url("/suits/BlueTexture.png")',
                 height: "20px",
                 borderRadius: "10px",
-                cursor:'pointer',
+                cursor: "pointer",
                 margin: "5px 5px 5px 5px",
               }}
               onClick={() => {
@@ -42,8 +40,7 @@ class Custom extends Component {
             <div
               className="grid-item"
               style={{
-                backgroundImage:
-                  'url("https://www.hockerty.com/dimg/fabric/suit/2251_huge.jpg")',
+                backgroundImage: 'url("/suits/GreenTexture.png")',
                 height: "20px",
                 borderRadius: "10px",
                 margin: "5px 5px 5px 5px",
@@ -53,7 +50,7 @@ class Custom extends Component {
               }}
             ></div>
 
-            <div
+            {/* <div
               className="grid-item"
               style={{
                 backgroundImage:
@@ -96,7 +93,7 @@ class Custom extends Component {
               onClick={() => {
                 this.props.changeDesign("d6");
               }}
-            ></div>
+            ></div> */}
           </div>
         </div>
       </div>

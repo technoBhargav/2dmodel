@@ -11,21 +11,32 @@ class App extends Component {
     super();
     this.state = {
       design: "",
+      // back: "",
     };
   }
 
   changeDesign = (value) => {
     this.setState({ design: value });
   };
+  // changeBack = (value) => {
+  //   this.setState({ back: value });
+  // };
 
   render() {
     return (
       <div className="grid-container">
         <div className="grid-item">
-          <Custom state={this.state} changeDesign={this.changeDesign} />
+          <Custom
+            state={this.state}
+            changeDesign={this.changeDesign}
+          />
+          {/* <Custom
+            state={this.state}
+            changeDesign={this.changeDesign}
+          /> */}
         </div>
 
-        <SVGComponent design={this.state.design} />
+        <SVGComponent design={this.state} />
         {/* <SuitImage design={this.state.design}/> */}
       </div>
     );

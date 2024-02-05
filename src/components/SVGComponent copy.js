@@ -3,54 +3,42 @@ import "./suit.css";
 
 function MySVGComponent(props) {
   const { design } = props.design;
-  let backImage,
-    backBottomImage,
-    mainImage,
-    handImage,
-    leftBottomPocketImage,
-    rightBottomPocketImage,
-    topPocketImage;
+  let backgroundImageUrl;
+  let backgroundImageUrl1 =
+    "https://www.hockerty.com/dimg/lining/default/173_big.jpg";
 
   switch (design) {
     case "d1":
-      backImage = "/suits/Black/0.png";
-      backBottomImage = "/suits/Black/00.png";
-      mainImage = "/suits/Black/1.png";
-      handImage = "/suits/Black/2.png";
-      leftBottomPocketImage = "/suits/Black/3.png";
-      rightBottomPocketImage = "/suits/Black/4.png";
-      topPocketImage = "/suits/Black/5.png";
+      backgroundImageUrl =
+        "https://d2w9m16hs9jc37.cloudfront.net/dimg/fabric/suit/894_huge.jpg";
       break;
     case "d2":
-      backImage = "/suits/Blue/0.png";
-      backBottomImage = "/suits/Blue/00.png";
-      mainImage = "/suits/Blue/1.png";
-      handImage = "/suits/Blue/2.png";
-      leftBottomPocketImage = "/suits/Blue/3.png";
-      rightBottomPocketImage = "/suits/Blue/4.png";
-      topPocketImage = "/suits/Blue/5.png";
+      backgroundImageUrl =
+        "https://d2w9m16hs9jc37.cloudfront.net/dimg/fabric/suit/141_huge.jpg";
       break;
     case "d3":
-      backImage = "/suits/Green/0.png";
-      backBottomImage = "/suits/Green/00.png";
-      mainImage = "/suits/Green/1.png";
-      handImage = "/suits/Green/2.png";
-      leftBottomPocketImage = "/suits/Green/3.png";
-      rightBottomPocketImage = "/suits/Green/4.png";
-      topPocketImage = "/suits/Green/5.png";
+      backgroundImageUrl =
+        "https://www.hockerty.com/dimg/fabric/suit/2251_huge.jpg";
+      break;
+    case "d4":
+      backgroundImageUrl =
+        "https://d2w9m16hs9jc37.cloudfront.net/dimg/fabric/suit/3322_huge.jpg";
+      break;
+    case "d5":
+      backgroundImageUrl =
+        "https://www.hockerty.com/dimg/fabric/suit/3328_huge.jpg";
+      break;
+    case "d6":
+      backgroundImageUrl =
+        "https://www.hockerty.com/dimg/fabric/suit/3163_huge.jpg";
       break;
     default:
-      backImage = "/suits/Black/0.png";
-      backBottomImage = "/suits/Black/00.png";
-      mainImage = "/suits/Black/1.png";
-      handImage = "/suits/Black/2.png";
-      leftBottomPocketImage = "/suits/Black/3.png";
-      rightBottomPocketImage = "/suits/Black/4.png";
-      topPocketImage = "/suits/Black/5.png";
+      backgroundImageUrl =
+        "https://d2w9m16hs9jc37.cloudfront.net/dimg/fabric/suit/894_huge.jpg";
   }
   return (
     <div className="relative">
-      {/* <svg
+      <svg
         id="Layer_2"
         data-name="Layer 2"
         xmlns="http://www.w3.org/2000/svg"
@@ -79,14 +67,9 @@ function MySVGComponent(props) {
           />
           <use id="Background" href="#img2" x="0" y="0" />
         </g>
-      </svg> */}
-
-      {/* <div class="mask1"> */}
-      {/* <img className="aa" src={backgroundImageUrl} alt="aas" /> */}
-      {/* <img id="frab" className="bbbb" src="/10.png" alt="aas" /> */}
-      {/* </div> */}
-      {/* <img className="aaaa" src="/12.png" alt="aas" /> */}
-      {/* <svg
+      </svg>
+      <img className="aaaa" src="/Cutout4.png" alt="aas" />
+      <svg
         id="Layer_1"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
@@ -115,16 +98,8 @@ function MySVGComponent(props) {
           <use id="Background" href="#img1" x="0" y="0" />
         </g>
         <rect className="cls-2" x="0.5" y="0.5" width="1080" height="1080" />
-      </svg> */}
-      {/* <img className="aaa" src="/Cutout2.png" alt="aas" /> */}
-
-      <img className="aaa" src={backImage} alt="aaa" />
-      <img className="aaa" src={backBottomImage} alt="aaa" />
-      <img className="aaa" src={mainImage} alt="aaa" />
-      <img className="aaa" src={handImage} alt="aaa" />
-      <img className="aaa" src={leftBottomPocketImage} alt="aaa" />
-      <img className="aaa" src={rightBottomPocketImage} alt="aaa" />
-      <img className="aaa" src={topPocketImage} alt="aaa" />
+      </svg>
+      <img className="aaa" src="/Cutout2.png" alt="aas" />
     </div>
   );
 }
